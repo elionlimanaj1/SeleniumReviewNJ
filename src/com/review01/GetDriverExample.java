@@ -9,9 +9,13 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.utils.CommonMethods;
 
-public class GetDriverExample {
+public class GetDriverExample extends CommonMethods{
+
+	public static final String url = "http://166.62.36.207/humanresources/symfony/web/index.php/auth/login\\n";
+
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = CommonMethods.createDriver("chrome");
+
+		CommonMethods.setUp("chrome", url);
 
 		WebElement txtUsername = driver.findElement(By.id("txtUsername"));
 		txtUsername.sendKeys("admin");
