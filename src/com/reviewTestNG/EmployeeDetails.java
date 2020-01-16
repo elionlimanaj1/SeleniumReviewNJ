@@ -39,7 +39,7 @@ public class EmployeeDetails extends CommonMethods {
 
 	@AfterClass
 	public void afterClass() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.quit();
 	}
 
@@ -141,6 +141,7 @@ public class EmployeeDetails extends CommonMethods {
 
 		for (int i = 1; i <= rows.size(); i++) {
 			if (rows.get(i - 1).getText().contains(Id)) {
+				Thread.sleep(1000);
 				WebElement link = driver
 						.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" + i + "]/td[3]/a"));
 				wait.until(ExpectedConditions.elementToBeClickable(link));
@@ -149,6 +150,7 @@ public class EmployeeDetails extends CommonMethods {
 			}
 		}
 
+		Thread.sleep(500);
 		WebElement edit_save = driver.findElement(By.id("btnSave"));
 		edit_save.click();
 		// select gender
@@ -194,7 +196,7 @@ public class EmployeeDetails extends CommonMethods {
 
 		// check that Id matches
 		WebElement empId = driver.findElement(By.id("personal_txtEmployeeId"));
-		Assert.assertEquals(empId.getText(), Id);
+		Assert.assertEquals(empId.getAttribute("value"), Id);
 
 		// check that correct gender is selected
 		WebElement maleOption = driver.findElement(By.xpath("//input[@id='personal_optGender_1']"));
