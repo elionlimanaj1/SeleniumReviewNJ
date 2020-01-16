@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,29 +102,20 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3348, F, Single, 1975, 4, 18)">savePersonalDetailsWithData(3348, F, Single, 1975, 4, 18)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3422, F, Single, 1975, 4, 18)">savePersonalDetailsWithData(3422, F, Single, 1975, 4, 18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3478, M, Married, 1990, 9, 25)">savePersonalDetailsWithData(3478, M, Married, 1990, 9, 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3466, M, Single, 2010, 10, 25)">savePersonalDetailsWithData(3466, M, Single, 2010, 10, 25)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3384, M, Married, 1990, 9, 25)">savePersonalDetailsWithData(3384, M, Married, 1990, 9, 25)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.reviewTestNG.EmployeeDetails" hash-for-method="savePersonalDetailsWithData(3390, M, Single, 2010, 10, 25)">savePersonalDetailsWithData(3390, M, Single, 2010, 10, 25)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,18 +135,120 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="savePersonalDetailsWithData(3348, F, Single, 1975, 4, 18)">
-                  </a> <!-- savePersonalDetailsWithData(3348, F, Single, 1975, 4, 18) -->
+                  <a name="savePersonalDetailsWithData(3422, F, Single, 1975, 4, 18)">
+                  </a> <!-- savePersonalDetailsWithData(3422, F, Single, 1975, 4, 18) -->
                   <span class="method-name">savePersonalDetailsWithData</span>
-                  <span class="parameters">(3348, F, Single, 1975, 4, 18)</span>
+                  <span class="parameters">(3422, F, Single, 1975, 4, 18)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnSave&quot;}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;Elions-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c96:c3ce:f07:bf83%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/0m/ft6vxrm952x...}, goog:chromeOptions: {debuggerAddress: localhost:59409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2b027458c27d7ad5773cea60319b68b
+*** Element info: {Using=id, value=btnSave}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.reviewTestNG.EmployeeDetails.savePersonalDetailsWithData(EmployeeDetails.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="savePersonalDetailsWithData(3478, M, Married, 1990, 9, 25)">
+                  </a> <!-- savePersonalDetailsWithData(3478, M, Married, 1990, 9, 25) -->
+                  <span class="method-name">savePersonalDetailsWithData</span>
+                  <span class="parameters">(3478, M, Married, 1990, 9, 25)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [3478] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.reviewTestNG.EmployeeDetails.savePersonalDetailsWithData(EmployeeDetails.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="savePersonalDetailsWithData(3466, M, Single, 2010, 10, 25)">
+                  </a> <!-- savePersonalDetailsWithData(3466, M, Single, 2010, 10, 25) -->
+                  <span class="method-name">savePersonalDetailsWithData</span>
+                  <span class="parameters">(3466, M, Single, 2010, 10, 25)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ui\-datepicker\-month&quot;}
   (Session info: chrome=79.0.3945.117)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;Elions-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c96:c3ce:f07:bf83%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/0m/ft6vxrm952x...}, goog:chromeOptions: {debuggerAddress: localhost:57939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1e384c7b64615076513239a332cabef0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/0m/ft6vxrm952x...}, goog:chromeOptions: {debuggerAddress: localhost:59409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2b027458c27d7ad5773cea60319b68b
 *** Element info: {Using=class name, value=ui-datepicker-month}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -171,7 +264,7 @@ Session ID: 1e384c7b64615076513239a332cabef0
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
 	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.reviewTestNG.EmployeeDetails.savePersonalDetailsWithData(EmployeeDetails.java:166)
+	at com.reviewTestNG.EmployeeDetails.savePersonalDetailsWithData(EmployeeDetails.java:167)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -203,34 +296,10 @@ Session ID: 1e384c7b64615076513239a332cabef0
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.reviewTestNG.EmployeeDetails</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="savePersonalDetailsWithData(3384, M, Married, 1990, 9, 25)">
-                  </a> <!-- savePersonalDetailsWithData(3384, M, Married, 1990, 9, 25) -->
-                  <span class="method-name">savePersonalDetailsWithData</span>
-                  <span class="parameters">(3384, M, Married, 1990, 9, 25)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="savePersonalDetailsWithData(3390, M, Single, 2010, 10, 25)">
-                  </a> <!-- savePersonalDetailsWithData(3390, M, Single, 2010, 10, 25) -->
-                  <span class="method-name">savePersonalDetailsWithData</span>
-                  <span class="parameters">(3390, M, Single, 2010, 10, 25)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0m/ft6vxrm952x7vm9wyghf__jr0000gn/T/testng-eclipse--470862744/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0m/ft6vxrm952x7vm9wyghf__jr0000gn/T/testng-eclipse--345355290/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -283,20 +352,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'savePersonalDetailsWithData')
 data.setCell(0, 2, 'com.reviewTestNG.EmployeeDetails')
-data.setCell(0, 3, 41762);
+data.setCell(0, 3, 15451);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'savePersonalDetailsWithData')
 data.setCell(1, 2, 'com.reviewTestNG.EmployeeDetails')
-data.setCell(1, 3, 24597);
+data.setCell(1, 3, 13720);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'savePersonalDetailsWithData')
 data.setCell(2, 2, 'com.reviewTestNG.EmployeeDetails')
-data.setCell(2, 3, 23927);
+data.setCell(2, 3, 8610);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -336,33 +405,37 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">14590 ms</span>
+                <span class="method-start">13297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">savePersonalDetailsWithData(3348, F, Single, 1975, 4, 18)</span>
-                <span class="method-start">23268 ms</span>
+                <span class="method-name">savePersonalDetailsWithData(3422, F, Single, 1975, 4, 18)</span>
+                <span class="method-start">14552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">65034 ms</span>
+                <span class="method-start">28275 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">savePersonalDetailsWithData(3384, M, Married, 1990, 9, 25)</span>
-                <span class="method-start">75035 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">savePersonalDetailsWithData(3478, M, Married, 1990, 9, 25)</span>
+                <span class="method-start">29692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">98963 ms</span>
+                <span class="method-start">38303 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">savePersonalDetailsWithData(3390, M, Single, 2010, 10, 25)</span>
-                <span class="method-start">103262 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">savePersonalDetailsWithData(3466, M, Single, 2010, 10, 25)</span>
+                <span class="method-start">39119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">127860 ms</span>
+                <span class="method-start">54572 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

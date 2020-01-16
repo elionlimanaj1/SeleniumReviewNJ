@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -191,12 +192,26 @@ public class EmployeeDetails extends CommonMethods {
 			e.printStackTrace();
 		}
 
+		// check that Id matches
+		WebElement empId = driver.findElement(By.id("personal_txtEmployeeId"));
+		Assert.assertEquals(empId.getText(), Id);
+
+		// check that correct gender is selected
+		WebElement maleOption = driver.findElement(By.xpath("//input[@id='personal_optGender_1']"));
+		WebElement femaleOption = driver.findElement(By.xpath("//input[@id='personal_optGender_2']"));
+
+		if (gender.equals("M")) {
+			Assert.assertTrue(maleOption.isSelected());
+		} else if (gender.equals("F")) {
+			Assert.assertTrue(femaleOption.isSelected());
+		}
+
 	}
 
 	@DataProvider
 	public Object[][] getIdAndData() {
-		Object[][] data = { { "3348", "F", "Single", "1975", "4", "18" }, { "3384", "M", "Married", "1990", "9", "25" },
-				{ "3390", "M", "Single", "2010", "10", "25" } };
+		Object[][] data = { { "3422", "F", "Single", "1975", "4", "18" }, { "3478", "M", "Married", "1990", "9", "25" },
+				{ "3466", "M", "Single", "2010", "10", "25" } };
 		return data;
 	}
 

@@ -7,8 +7,8 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="savePersonalDetails"/>
           <include name="afterClass"/>
+          <include name="savePersonalDetailsWithData" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.reviewTestNG.EmployeeDetails -->
     </classes>
